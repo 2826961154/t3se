@@ -1,0 +1,88 @@
+{
+  "name": "xukongcaikuang4",
+  "target-item": "environmentaltech:void_ore_miner_cont_4",
+  "target-count":1,
+  "target-meta":0,
+
+  "duration": 40,
+
+  
+  "input-types": {
+    "a": {
+      "id": "environmentaltech:pladium",
+      "meta": 0
+    },
+    "b": {
+      "id": "minecraft:diamond_block",
+      "meta": 0
+    },
+    "c": {
+      "id": "environmentaltech:interconnect",
+      "meta": 0
+    },
+    "d": {
+      "id": "environmentaltech:void_ore_miner_cont_3",
+      "meta": 8
+    },
+    "e": {
+      "id": "environmentaltech:laser_lens",
+      "meta": 0
+    }
+  },
+
+  "catalyst":"environmentaltech:diode",
+  "symmetrical": true,
+  "shape": [
+    [
+      [
+        "a",
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "a",
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "a",
+        "_",
+        "a"
+      ],
+      [
+        "_",
+        "d",
+        "_"
+      ],
+      [
+        "a",
+        "_",
+        "a"
+      ]
+    ],
+    [
+      [
+        "c",
+        "_",
+        "c"
+      ],
+      [
+        "_",
+        "e",
+        "_"
+      ],
+      [
+        "c",
+        "_",
+        "c"
+      ]
+    ]
+  ]
+}

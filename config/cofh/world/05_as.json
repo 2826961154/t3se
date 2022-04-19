@@ -1,0 +1,31 @@
+{
+    "dependencies": "astralsorcery",
+	"populate": 
+    {
+        "crystal":
+        {
+            "distribution":"uniform",
+            "generator":
+            {
+                "block":
+                {
+                    "name":"astralsorcery:blockcustomore",
+                    "metadata":0
+                },
+                "material":"minecraft:stone",
+                "cluster-size":2
+            },
+            "cluster-count":1,
+            "min-height":1,
+            "max-height":5,
+            "retrogen":"true",
+            "biome":"all",
+            "dimension":
+            {
+                "restriction":"whitelist",
+                "value":[-11325]
+            
+            } 
+        }
+    }  
+}

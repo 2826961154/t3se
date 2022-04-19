@@ -1,0 +1,175 @@
+//remove
+recipes.remove(<modularmachinery:itemmodularium>);
+recipes.remove(<modularmachinery:blockcasing:4>);
+recipes.remove(<modularmachinery:blockcontroller>);
+//add
+recipes.addShaped(<modularmachinery:itemmodularium>*4, 
+                    [[<dirtcraft:gangjinhunningtu>,<botania:manaresource>,<dirtcraft:gangjinhunningtu>],
+                    [<botania:manaresource>,<naturesaura:sky_ingot>,<botania:manaresource>],
+                    [<dirtcraft:gangjinhunningtu>,<botania:manaresource>,<dirtcraft:gangjinhunningtu>]]);
+recipes.addShaped(<modularmachinery:blockcontroller>, 
+                    [[<modularmachinery:itemmodularium>,<thermalfoundation:material:132>,<modularmachinery:itemmodularium>],
+                    [<thermalfoundation:material:134>,<minecraft:diamond>,<thermalfoundation:material:134>],
+                    [<modularmachinery:itemmodularium>,<thermalfoundation:material:132>,<modularmachinery:itemmodularium>]]);
+recipes.addShaped(<modularmachinery:blockcasing:3>, 
+                    [[<modularmachinery:blockcasing>,<contenttweaker:dirt_gear>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:dirt_gear>,<contenttweaker:dirt_gear>,<contenttweaker:dirt_gear>],
+                    [<modularmachinery:blockcasing>,<contenttweaker:dirt_gear>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockcasing:1>, 
+                    [[<modularmachinery:blockcasing>,<contenttweaker:dirt_plate>,<modularmachinery:blockcasing>],
+                    [<chisel:iron:13>,<chisel:technical:4>,<chisel:iron:13>],
+                    [<modularmachinery:blockcasing>,<contenttweaker:dirt_plate>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockcasing:5>, 
+                    [[<modularmachinery:blockcasing>,<extrautils2:screen>,<modularmachinery:blockcasing>],
+                    [<extrautils2:screen>,<immersiveintelligence:material:7>,<extrautils2:screen>],
+                    [<modularmachinery:blockcasing>,<extrautils2:screen>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockcasing:4>, 
+                    [[<modularmachinery:blockcasing>,<contenttweaker:dirt_plate>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:dirt_plate>,<minecraft:obsidian>,<contenttweaker:dirt_plate>],
+                    [<modularmachinery:blockcasing>,<contenttweaker:dirt_plate>,<modularmachinery:blockcasing>]]);
+
+//输入仓
+recipes.addShaped(<modularmachinery:blockinputbus:2>, 
+                    [[null,<minecraft:hopper>,null],
+                    [null,<modularmachinery:blockinputbus:1>,null],
+                    [null,<ironchest:iron_chest>,null]]);
+recipes.addShaped(<modularmachinery:blockinputbus:3>, 
+                    [[null,<minecraft:hopper>,null],
+                    [<contenttweaker:dirt_plate>,<modularmachinery:blockinputbus:2>,<contenttweaker:dirt_plate>],
+                    [null,<ironchest:iron_chest:1>,null]]);
+recipes.addShaped(<modularmachinery:blockinputbus:4>, 
+                    [[<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:dirt_plate>,<modularmachinery:blockinputbus:3>,<contenttweaker:dirt_plate>],
+                    [<modularmachinery:blockcasing>,<ironchest:iron_chest:2>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockinputbus:5>, 
+                    [[<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:reinforced_dirt_plate>,<modularmachinery:blockinputbus:4>,<contenttweaker:reinforced_dirt_plate>],
+                    [<modularmachinery:blockcasing>,<actuallyadditions:block_giant_chest>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockinputbus:6>, 
+                    [[<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>],
+                    [<appliedenergistics2:storage_cell_64k>,<modularmachinery:blockinputbus:5>,<appliedenergistics2:storage_cell_64k>],
+                    [<modularmachinery:blockcasing>,<actuallyadditions:block_giant_chest_large>,<modularmachinery:blockcasing>]]);
+//输出仓
+recipes.addShaped(<modularmachinery:blockoutputbus:2>, 
+                    [[null,<ironchest:iron_chest>,null],
+                    [null,<modularmachinery:blockoutputbus:1>,null],
+                    [null,<minecraft:hopper>,null]]);
+recipes.addShaped(<modularmachinery:blockoutputbus:3>, 
+                    [[null,<ironchest:iron_chest:1>,null],
+                    [<contenttweaker:dirt_plate>,<modularmachinery:blockoutputbus:2>,<contenttweaker:dirt_plate>],
+                    [null,<minecraft:hopper>,null]]);
+recipes.addShaped(<modularmachinery:blockoutputbus:4>, 
+                    [[<modularmachinery:blockcasing>,<ironchest:iron_chest:2>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:dirt_plate>,<modularmachinery:blockoutputbus:3>,<contenttweaker:dirt_plate>],
+                    [<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockoutputbus:5>, 
+                    [[<modularmachinery:blockcasing>,<actuallyadditions:block_giant_chest>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:reinforced_dirt_plate>,<modularmachinery:blockoutputbus:4>,<contenttweaker:reinforced_dirt_plate>],
+                    [<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockoutputbus:6>, 
+                    [[<modularmachinery:blockcasing>,<actuallyadditions:block_giant_chest_large>,<modularmachinery:blockcasing>],
+                    [<appliedenergistics2:storage_cell_64k>,<modularmachinery:blockoutputbus:5>,<appliedenergistics2:storage_cell_64k>],
+                    [<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>]]);
+//流体输入
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:2>, 
+                    [[null,<minecraft:hopper>,null],
+                    [null,<modularmachinery:blockfluidinputhatch:1>,null],
+                    [null,<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 0 as byte})|<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}),null]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:3>, 
+                    [[null,<minecraft:hopper>,null],
+                    [<contenttweaker:dirt_plate>,<modularmachinery:blockfluidinputhatch:2>,<contenttweaker:dirt_plate>],
+                    [null,<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 2 as byte}),null]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:4>, 
+                    [[<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:dirt_plate>,<modularmachinery:blockfluidinputhatch:3>,<contenttweaker:dirt_plate>],
+                    [<modularmachinery:blockcasing>,<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 4 as byte}),<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:5>, 
+                    [[<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:reinforced_dirt_plate>,<modularmachinery:blockfluidinputhatch:4>,<contenttweaker:reinforced_dirt_plate>],
+                    [<modularmachinery:blockcasing>,<extrautils2:drum:3>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:6>, 
+                    [[<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>],
+                    [<appliedenergistics2:fluid_storage_cell_64k>,<modularmachinery:blockfluidinputhatch:5>,<appliedenergistics2:fluid_storage_cell_64k>],
+                    [<modularmachinery:blockcasing>,<bloodmagic:blood_tank:3>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockfluidinputhatch:7>, 
+                    [[<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>],
+                    [<bloodarsenal:blood_infused_iron_block>,<modularmachinery:blockfluidinputhatch:6>,<bloodarsenal:blood_infused_iron_block>],
+                    [<modularmachinery:blockcasing>,<bloodmagic:blood_tank:7>,<modularmachinery:blockcasing>]]);
+//流体输出
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:2>, 
+                    [[null,<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 0 as byte})|<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Level: 0 as byte}),null],
+                    [null,<modularmachinery:blockfluidoutputhatch:1>,null],
+                    [null,<minecraft:hopper>,null]]);
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:3>, 
+                    [[null,<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 2 as byte}),null],
+                    [<contenttweaker:dirt_plate>,<modularmachinery:blockfluidoutputhatch:2>,<contenttweaker:dirt_plate>],
+                    [null,<minecraft:hopper>,null]]);
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:4>, 
+                    [[<modularmachinery:blockcasing>,<thermalexpansion:tank>.withTag({RSControl: 0 as byte, Creative: 0 as byte, Level: 4 as byte}),<modularmachinery:blockcasing>],
+                    [<contenttweaker:dirt_plate>,<modularmachinery:blockfluidoutputhatch:3>,<contenttweaker:dirt_plate>],
+                    [<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:5>, 
+                    [[<modularmachinery:blockcasing>,<extrautils2:drum:3>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:reinforced_dirt_plate>,<modularmachinery:blockfluidoutputhatch:4>,<contenttweaker:reinforced_dirt_plate>],
+                    [<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:6>, 
+                    [[<modularmachinery:blockcasing>,<bloodmagic:blood_tank:3>,<modularmachinery:blockcasing>],
+                    [<appliedenergistics2:fluid_storage_cell_64k>,<modularmachinery:blockfluidoutputhatch:5>,<appliedenergistics2:fluid_storage_cell_64k>],
+                    [<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockfluidoutputhatch:7>, 
+                    [[<modularmachinery:blockcasing>,<bloodmagic:blood_tank:7>,<modularmachinery:blockcasing>],
+                    [<bloodarsenal:blood_infused_iron_block>,<modularmachinery:blockfluidoutputhatch:6>,<bloodarsenal:blood_infused_iron_block>],
+                    [<modularmachinery:blockcasing>,<minecraft:hopper>,<modularmachinery:blockcasing>]]);
+//能量输入
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:2>, 
+                    [[null,<enderio:item_endergy_conduit:6>,null],
+                    [null,<thermalexpansion:frame:146>,null],
+                    [null,<enderio:item_endergy_conduit:6>,null]]);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:3>, 
+                    [[null,<enderio:item_endergy_conduit:7>,null],
+                    [<contenttweaker:dirt_plate>,<thermalexpansion:frame:147>,<contenttweaker:dirt_plate>],
+                    [null,<enderio:item_endergy_conduit:7>,null]]);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:4>, 
+                    [[<modularmachinery:blockcasing>,<enderio:item_endergy_conduit:8>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:dirt_plate>,<thermalexpansion:frame:148>,<contenttweaker:dirt_plate>],
+                    [<modularmachinery:blockcasing>,<enderio:item_endergy_conduit:8>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:5>, 
+                    [[<modularmachinery:blockcasing>,<enderio:item_endergy_conduit:9>,<modularmachinery:blockcasing>],
+                    [<contenttweaker:reinforced_dirt_plate>,<rftools:powercell>,<contenttweaker:reinforced_dirt_plate>],
+                    [<modularmachinery:blockcasing>,<enderio:item_endergy_conduit:9>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:6>, 
+                    [[<modularmachinery:blockcasing>,<enderio:item_endergy_conduit:10>,<modularmachinery:blockcasing>],
+                    [<appliedenergistics2:dense_energy_cell>,<rftools:powercell_advanced>,<appliedenergistics2:dense_energy_cell>],
+                    [<modularmachinery:blockcasing>,<enderio:item_endergy_conduit:10>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockenergyinputhatch:7>, 
+                    [[<modularmachinery:blockcasing>,<enderio:item_endergy_conduit:11>,<modularmachinery:blockcasing>],
+                    [<nuclearcraft:voltaic_pile_basic>,<nuclearcraft:lithium_ion_battery_elite>,<nuclearcraft:voltaic_pile_basic>],
+                    [<modularmachinery:blockcasing>,<enderio:item_endergy_conduit:11>,<modularmachinery:blockcasing>]]);
+//能量输出
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:2>, 
+                    [[null,null,null],
+                    [<enderio:item_endergy_conduit:6>,<thermalexpansion:frame:146>,<enderio:item_endergy_conduit:6>],
+                    [null,null,null]]);
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:3>, 
+                    [[null,<contenttweaker:dirt_plate>,null],
+                    [<enderio:item_endergy_conduit:7>,<thermalexpansion:frame:147>,<enderio:item_endergy_conduit:7>],
+                    [null,<contenttweaker:dirt_plate>,null]]);
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:4>, 
+                    [[<modularmachinery:blockcasing>,<contenttweaker:dirt_plate>,<modularmachinery:blockcasing>],
+                    [<enderio:item_endergy_conduit:8>,<thermalexpansion:frame:148>,<enderio:item_endergy_conduit:8>],
+                    [<modularmachinery:blockcasing>,<contenttweaker:dirt_plate>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:5>, 
+                    [[<modularmachinery:blockcasing>,<contenttweaker:reinforced_dirt_plate>,<modularmachinery:blockcasing>],
+                    [<enderio:item_endergy_conduit:9>,<rftools:powercell>,<enderio:item_endergy_conduit:9>],
+                    [<modularmachinery:blockcasing>,<contenttweaker:reinforced_dirt_plate>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:6>, 
+                    [[<modularmachinery:blockcasing>,<appliedenergistics2:dense_energy_cell>,<modularmachinery:blockcasing>],
+                    [<enderio:item_endergy_conduit:10>,<rftools:powercell_advanced>,<enderio:item_endergy_conduit:10>],
+                    [<modularmachinery:blockcasing>,<appliedenergistics2:dense_energy_cell>,<modularmachinery:blockcasing>]]);
+recipes.addShaped(<modularmachinery:blockenergyoutputhatch:7>, 
+                    [[<modularmachinery:blockcasing>,<nuclearcraft:voltaic_pile_basic>,<modularmachinery:blockcasing>],
+                    [<enderio:item_endergy_conduit:11>,<nuclearcraft:lithium_ion_battery_elite>,<enderio:item_endergy_conduit:11>],
+                    [<modularmachinery:blockcasing>,<nuclearcraft:voltaic_pile_basic>,<modularmachinery:blockcasing>]]);
+
+
+<modularmachinery:itemblueprint>.withTag({dynamicmachine: "modularmachinery:fanqing"}).addShiftTooltip("这个蓝图只是为了让你更方便的搭建，并不是个mm多方块机器");

@@ -1,0 +1,22 @@
+//remove
+recipes.remove(<deepmoblearning:machine_casing>);
+recipes.remove(<deepmoblearning:data_model_guardian>);
+recipes.remove(<deepmoblearning:data_model_ghast>);
+recipes.remove(<deepmoblearning:deep_learner>);
+recipes.remove(<deepmoblearning:data_model_blank>);
+recipes.remove(<deepmoblearning:soot_covered_plate>);
+//add
+recipes.addShapeless(<deepmoblearning:data_model_guardian>,[<deepmoblearning:data_model_blank>,<abyssalcraft:essence>,<abyssalcraft:essence:1>]);
+recipes.addShapeless(<deepmoblearning:data_model_ghast>,[<deepmoblearning:data_model_blank>,<abyssalcraft:gatekeeperessence>]);
+recipes.addShaped(<deepmoblearning:machine_casing>,
+                    [[<deepmoblearning:soot_covered_plate>,<contenttweaker:dirt_plate>,<deepmoblearning:soot_covered_plate>],
+                    [<contenttweaker:dirt_plate>,<contenttweaker:reinforced_dirt_core>,<contenttweaker:dirt_plate>],
+                    [<deepmoblearning:soot_covered_plate>,<contenttweaker:dirt_plate>,<deepmoblearning:soot_covered_plate>]]);
+recipes.addShaped(<deepmoblearning:deep_learner>,
+                    [[<deepmoblearning:soot_covered_plate>,<appliedenergistics2:material:23>,<deepmoblearning:soot_covered_plate>],
+                    [<appliedenergistics2:material:24>,<extrautils2:screen>,<appliedenergistics2:material:24>],
+                    [<deepmoblearning:soot_covered_plate>,<deepmoblearning:soot_covered_redstone>,<deepmoblearning:soot_covered_plate>]]);
+recipes.addShaped(<deepmoblearning:data_model_blank>,
+                    [[<minecraft:dye:4>,<appliedenergistics2:material:22>,<minecraft:dye:4>],
+                    [<appliedenergistics2:material:24>,<extrautils2:decorativesolid:3>,<appliedenergistics2:material:24>],
+                    [<minecraft:dye:4>,<minecraft:gold_ingot>,<minecraft:dye:4>]]);

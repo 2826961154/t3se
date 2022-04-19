@@ -1,0 +1,421 @@
+import mods.efabct.EFabRecipe;
+import mods.astralsorcery.Altar;
+//remove
+recipes.remove(<efab:base>);
+recipes.remove(<efab:grid>);
+//add
+recipes.addShaped(<efab:grid>,
+                    [[null,<ore:plateElectrum>,null],
+                    [<ore:plateElectrum>,<extendedcrafting:table_advanced>,<ore:plateElectrum>],
+                    [null,<ore:plateElectrum>,null]]);
+recipes.addShaped(<efab:upgrade_digital>,
+                    [[null,<ore:plateElectrum>,null],
+                    [null,<appliedenergistics2:material:53>,null],
+                    [null,<ore:plateElectrum>,null]]);
+recipes.addShaped(<efab:upgrade_power>,
+                    [[null,<ore:plateElectrum>,null],
+                    [null,<appliedenergistics2:material:27>,null],
+                    [null,<ore:plateElectrum>,null]]);
+//五彩祭坛添配方
+Altar.addTraitAltarRecipe("efab",<efab:base>*4,4500,20,
+	    [null,<ore:plateElectrum>,null,
+		<ore:plateElectrum>,<deepmoblearning:glitch_infused_ingot>,<ore:plateElectrum>,
+		null,<ore:plateElectrum>,null,
+		null,null,null,null,
+		null,null,
+		null,null,
+		null,null,
+		null,null,
+        null,null,null,null,
+	    //外部配方
+	    <astralsorcery:itemusabledust:1>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust>,<astralsorcery:itemusabledust:1>,<astralsorcery:itemusabledust>],
+		//星座
+		"astralsorcery.constellation.armara");
+
+
+//efab添配方
+EFabRecipe.shaped(<efab:gearbox>,
+                    [[<efab:base>,<contenttweaker:dirt_plate>,<efab:base>],
+                    [<contenttweaker:dirt_plate>,<contenttweaker:dirt_gear>,<contenttweaker:dirt_plate>],
+                    [<efab:base>,<contenttweaker:dirt_plate>,<efab:base>]])
+.time(40)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<efab:boiler>,
+                    [[<efab:base>,<contenttweaker:dirt_plate>,<efab:base>],
+                    [<efab:base>,<extrautils2:ingredients:13>,<efab:base>],
+                    [<efab:base>,<immersiveengineering:metal_device1:1>,<efab:base>]])
+.tier("GEARBOX")
+.time(20)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<efab:tank>,
+                    [[<efab:base>,<efab:base>,<efab:base>],
+                    [<efab:base>,<enderio:block_tank>,<efab:base>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.tier("GEARBOX")
+.time(20)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<efab:tank2>,
+                    [[<efab:base>,<efab:base>,<efab:base>],
+                    [<efab:base>,<enderio:block_tank:1>,<efab:base>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("UPGRADE_POWER")
+.time(20)
+.rfPerTick(2000);
+
+EFabRecipe.shaped(<efab:rfcontrol>,
+                    [[<enderio:item_material:65>,<appliedenergistics2:material:23>,<enderio:item_material:65>],
+                    [<appliedenergistics2:material:24>,<thermalexpansion:frame:146>,<appliedenergistics2:material:22>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.time(20);
+
+EFabRecipe.shaped(<efab:rfstorage>,
+                    [[<efab:base>,<efab:base>,<efab:base>],
+                    [<efab:base>,<thermalexpansion:frame:146>,<efab:base>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.time(20);
+
+EFabRecipe.shaped(<efab:crafter>,
+                    [[<efab:base>,<efab:base>,<efab:base>],
+                    [<contenttweaker:reinforced_dirt_plate>,<appliedenergistics2:molecular_assembler>,<contenttweaker:reinforced_dirt_plate>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.time(5)
+.rfPerTick(6000);
+
+EFabRecipe.shaped(<efab:rfstorage_advanced>,
+                    [[<efab:base>,<efab:base>,<efab:base>],
+                    [<efab:base>,<thermalexpansion:frame:147>,<efab:base>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.time(5)
+.rfPerTick(6000);
+
+EFabRecipe.shaped(<efab:processor>,
+                    [[<efab:base>,<efab:base>,<efab:base>],
+                    [<efab:base>,<modularmachinery:blockcasing:5>,<efab:base>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.tier("GEARBOX")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:fluid_runhuayou>*500)
+.time(15)
+.rfPerTick(3000);
+
+EFabRecipe.shaped(<efab:steamengine>,
+                    [[<efab:base>,null,<efab:base>],
+                    [<efab:base>,<industrialforegoing:petrified_fuel_generator>,<efab:base>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.tier("GEARBOX")
+.fluid(<liquid:fluid_runhuayou>*50)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<efab:storage>,
+                    [[<efab:base>,<efab:base>,<efab:base>],
+                    [<efab:base>,<ironchest:iron_chest>,<efab:base>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.tier("GEARBOX")
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<extrautils2:suncrystal:250>,
+                    [[null,<astralsorcery:itemcraftingcomponent:4>,null],
+                    [null,<naturesaura:aura_bottle>.withTag({stored_type: "naturesaura:overworld"}),null],
+                    [null,<minecraft:diamond>,null]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:liquid_sunshine>*100)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<libvulpes:structuremachine>,
+                    [[<efab:base>,<toverino:torcherino>,<efab:base>],
+                    [<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_core>,<contenttweaker:reinforced_dirt_plate>],
+                    [<efab:base>,<extrautils2:suncrystal>,<efab:base>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:molten_compact_machine_wall>*1000)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<contenttweaker:reinforced_dirt_plate>*4,
+                    [[<ore:plateEnderium>,<ore:plateLumium>,<deepmoblearning:soot_covered_plate>],
+                    [<ore:platePlatinum>,<contenttweaker:dirt_plate>,<ore:platePlatinum>],
+                    [<deepmoblearning:soot_covered_plate>,<ore:plateLumium>,<ore:plateEnderium>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:fluid_runhuayou>*100)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<contenttweaker:reinforced_dirt_gear>*4,
+                    [[<ore:gearEnderium>,<ore:gearLumium>,<ore:gearEnderium>],
+                    [<ore:gearPlatinum>,<contenttweaker:dirt_gear>,<ore:gearPlatinum>],
+                    [<ore:gearEnderium>,<ore:gearLumium>,<ore:gearEnderium>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:fluid_runhuayou>*100)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:enderman"}),
+                    [[null,<deepmoblearning:pristine_matter_enderman>,null],
+                    [null,<enderio:item_material:52>,null],
+                    [null,<enderio:item_soul_vial>,null]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:shulker"}),
+                    [[null,<deepmoblearning:pristine_matter_shulker>,null],
+                    [null,<enderio:item_material:52>,null],
+                    [null,<enderio:item_soul_vial>,null]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<advancedrocketry:precisionassemblingmachine>,
+                    [[<appliedenergistics2:material:24>,<advancedrocketry:misc>,<appliedenergistics2:material:24>],
+                    [<enderio:item_capacitor_stellar>,<libvulpes:structuremachine>,<enderio:item_capacitor_stellar>],
+                    [<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:vapor_of_levity>*1000)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<rftools:machine_frame>,
+                    [[<dirtcraft:enrichedironingot>,<rftools:dimensional_shard>,<dirtcraft:enrichedironingot>],
+                    [<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_core>,<contenttweaker:reinforced_dirt_plate>],
+                    [<dirtcraft:enrichedironingot>,<rftools:dimensional_shard>,<dirtcraft:enrichedironingot>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:vapor_of_levity>*1000)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<industrialforegoing:laser_base>,
+                    [[<dirtcraft:enrichedironingot>,<industrialforegoing:laser_lens>,<dirtcraft:enrichedironingot>],
+                    [<actuallyadditions:item_crystal_empowered:2>,<teslacorelib:machine_case>,<actuallyadditions:item_crystal_empowered:2>],
+                    [<botania:manaresource:14>,<actuallyadditions:item_crystal_empowered:2>,<botania:manaresource:14>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:molten_compact_machine_wall>*1000)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<efab:manareceptacle>,
+                    [[<efab:base>,<efab:base>,<efab:base>],
+                    [<efab:base>,<gugu-utils:sparkmanahatch>,<efab:base>],
+                    [<efab:base>,<efab:base>,<efab:base>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:molten_compact_machine_wall>*1000)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<efab:upgrade_magic>,
+                    [[null,<botania:manaresource:5>,null],
+                    [<botania:platform>,<ore:plateElectrum>,<botania:platform:1>],
+                    [null,<botania:manaresource:5>,null]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.manaPerTick(5000)
+.time(10)
+.rfPerTick(1000);
+
+EFabRecipe.shaped(<actuallyadditions:block_empowerer>,
+                    [[null,<actuallyadditions:item_crystal>,null],
+                    [null,<actuallyadditions:item_battery_triple>.withTag({Energy: 600000}),null],
+                    [<actuallyadditions:block_misc:9>,<actuallyadditions:block_display_stand>,<actuallyadditions:block_misc:9>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_MAGIC")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:molten_compact_machine_wall>*1000)
+.manaPerTick(500)
+.time(100)
+.rfPerTick(100000);
+
+EFabRecipe.shaped(<cookingforblockheads:fridge>*2,
+                    [[<ore:plateIron>,<ore:plateIron>,<ore:plateIron>],
+                    [<ore:plateIron>,<minecraft:ice>,<minecraft:iron_door>],
+                    [<ore:plateIron>,<minecraft:ice>,<minecraft:iron_door>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_MAGIC")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:cryotheum>*1000)
+.manaPerTick(500)
+.time(10)
+.rfPerTick(100);
+
+EFabRecipe.shaped(<cookingforblockheads:oven>,
+                    [[<immersiveengineering:sheetmetal:9>,<thermalexpansion:augment:256>,<immersiveengineering:sheetmetal:9>],
+                    [<immersiveengineering:sheetmetal:9>,<contenttweaker:ultra_dirt_core>,<immersiveengineering:sheetmetal:9>],
+                    [<immersiveengineering:sheetmetal:9>,<thermalexpansion:machine>,<immersiveengineering:sheetmetal:9>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_MAGIC")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:lava>*1000)
+.manaPerTick(500)
+.time(10)
+.rfPerTick(100);
+
+EFabRecipe.shaped(<cookingforblockheads:sink>,
+                    [[<minecraft:iron_ingot>,<minecraft:hopper>,<minecraft:iron_ingot>],
+                    [<minecraft:hardened_clay>,<contenttweaker:ultra_dirt_core>,<minecraft:hardened_clay>],
+                    [<minecraft:hardened_clay>,<thermalexpansion:device>,<minecraft:hardened_clay>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_MAGIC")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.fluid(<liquid:water>*1000)
+.manaPerTick(500)
+.time(10)
+.rfPerTick(100);
+
+EFabRecipe.shaped(<cookingforblockheads:cooking_table>,
+                    [[<minecraft:iron_ingot>,<extendedcrafting:table_advanced>,<minecraft:iron_ingot>],
+                    [<minecraft:hardened_clay>,<contenttweaker:ultra_dirt_core>,<minecraft:hardened_clay>],
+                    [<minecraft:hardened_clay>,<minecraft:hardened_clay>,<minecraft:hardened_clay>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_MAGIC")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.manaPerTick(500)
+.time(10)
+.rfPerTick(100);
+
+EFabRecipe.shaped(<cookingforblockheads:kitchen_floor>*16,
+                    [[<actuallyadditions:block_crystal_empowered:3>,<actuallyadditions:block_crystal_empowered:5>,null],
+                    [<actuallyadditions:block_crystal_empowered:5>,<actuallyadditions:block_crystal_empowered:3>,null],
+                    [null,null,null]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_MAGIC")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.manaPerTick(500)
+.time(10)
+.rfPerTick(100);
+
+EFabRecipe.shaped(<modularcontroller:chufang_controller>,
+                    [[<harvestcraft:potitem>,<harvestcraft:skilletitem>,<harvestcraft:saucepanitem>],
+                    [<harvestcraft:bakewareitem>,<modularmachinery:blockcontroller>,<harvestcraft:mortarandpestleitem>],
+                    [<harvestcraft:mixingbowlitem>,<contenttweaker:ultra_dirt_core>,<harvestcraft:juiceritem>]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_MAGIC")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.manaPerTick(500)
+.time(10)
+.rfPerTick(100);
+
+EFabRecipe.shaped(<calculator:calculatorscreen>,
+                    [[<minecraft:stained_glass:8>,<minecraft:stained_glass:8>,<minecraft:stained_glass:8>],
+                    [<mekanism:controlcircuit:3>,<advancedrocketry:misc>,<mekanism:controlcircuit:3>],
+                    [null,<bloodarsenal:blood_diamond:3>,null]])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_MAGIC")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.manaPerTick(500)
+.time(10)
+.rfPerTick(100);
+
+EFabRecipe.shapeless(<dirtcraft:ironcoalmixeddust>,[<contenttweaker:moon_dust>,<contenttweaker:fe2o3_dust>])
+.tier("GEARBOX")
+.tier("COMPUTING")
+.tier("STEAM")
+.tier("LIQUID")
+.tier("UPGRADE_POWER")
+.tier("UPGRADE_DIGITAL")
+.time(10)
+.rfPerTick(100);

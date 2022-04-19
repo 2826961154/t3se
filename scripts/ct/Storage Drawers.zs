@@ -1,0 +1,12 @@
+//remove
+recipes.remove(<storagedrawers:upgrade_storage>);
+recipes.remove(<storagedrawers:upgrade_storage:1>);
+recipes.remove(<storagedrawers:upgrade_storage:2>);
+recipes.remove(<storagedrawers:upgrade_storage:3>);
+recipes.remove(<storagedrawers:upgrade_storage:4>);
+recipes.remove(<storagedrawers:controller>);
+//add
+recipes.addShaped(<storagedrawers:controller>,
+                    [[<minecraft:stone>,<minecraft:stone>,<minecraft:stone>],
+                    [<advancedrocketry:ic:4>,<ore:drawerBasic>,<advancedrocketry:ic:4>],
+                    [<minecraft:stone>,<contenttweaker:reinforced_dirt_core>,<minecraft:stone>]]);

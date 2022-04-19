@@ -1,0 +1,37 @@
+<Asteroids>
+
+	<asteroid name="Small Asteroid" distance="10" mass="200" massVariability="0.05" minLevel="0" probability="10" richness="0.7" richnessVariability="0.1">
+
+		<ore itemStack="minecraft:iron_ore" chance="50" />
+
+		<ore itemStack="immersiveengineering:ore 5" chance="25" />
+
+		<ore itemStack="minecraft:redstone_ore" chance="25" />
+
+	</asteroid>
+
+	<asteroid name="Iridium Enriched asteroid" distance="200" mass="25" massVariability="0.05" minLevel="0" probability="0.75" richness="0.5" richnessVariability="0.1">
+
+		<ore itemStack="libvulpes:ore0 10" chance="75" />
+
+	</asteroid>
+
+        	<asteroid name="Gold asteroid" distance="200" mass="25" massVariability="0.5" minLevel="0" probability="0.75" richness="0.9" richnessVariability="0.1">
+
+			<ore itemStack="libvulpes:ore0 8" chance="50" />
+
+			<ore itemStack="libvulpes:ore0 10" chance="5" />
+
+                			<ore itemStack="libvulpes:ore0 3" chance="45" />
+
+	</asteroid>
+
+        	<asteroid name="Small basic" distance="125" mass="40" massVariability="0.05" minLevel="0" probability="0.75" richness="0.7" richnessVariability="0.1">
+
+			<ore itemStack="thermalfoundation:ore 6" chance="50" />
+
+                			<ore itemStack="rftools:dimensional_shard" chance="400" />
+
+	</asteroid>
+
+</Asteroids>

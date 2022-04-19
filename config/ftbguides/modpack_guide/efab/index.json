@@ -1,0 +1,17 @@
+[
+ {
+  "id": "1",
+  "title": "efab框架",
+  "icon": "item:efab:base"
+ },
+ {
+  "id": "2",
+  "title": "合成",
+  "icon": "item:efab:grid"
+ },
+ {
+  "id": "3",
+  "title": "自动合成",
+  "icon": "item:efab:crafter"
+ }
+]

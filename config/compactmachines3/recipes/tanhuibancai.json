@@ -1,0 +1,76 @@
+{
+    "name": "choutishengji4",
+    "target-item": "deepmoblearning:soot_covered_plate",
+    "target-count":8,
+  
+    "duration": 40,
+  
+    "input-types": {
+      "a": {
+        "id": "minecraft:obsidian",
+        "meta": 0
+      },
+      "b": {
+        "id": "minecraft:coal_block",
+        "meta": 0
+      }
+    },
+  
+    "catalyst":"deepmoblearning:soot_covered_redstone",
+    "symmetrical": true,
+    
+    "shape": [
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ],
+    [
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ],
+      [
+        "b",
+        "b",
+        "b"
+      ]
+    ],
+    [
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ],
+      [
+        "a",
+        "a",
+        "a"
+      ]
+    ]
+  ]
+}
+  

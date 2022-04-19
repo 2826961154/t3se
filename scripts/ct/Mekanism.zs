@@ -1,0 +1,165 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import mods.mekanism.enrichment;
+import mods.extendedcrafting.TableCrafting;
+val remove=[
+<mekanism:basicblock:8>,
+<mekanism:polyethene:2>,
+<mekanism:electrolyticcore>,
+<mekanism:energytablet>,
+<mekanism:basicblock:14>,
+<mekanism:basicblock2>,
+<mekanism:basicblock2:5>,
+<mekanism:machineblock>,
+<mekanism:machineblock:1>,
+<mekanism:machineblock:2>,
+<mekanism:machineblock:3>,
+<mekanism:machineblock:8>,
+<mekanism:machineblock:9>,
+<mekanism:machineblock:10>,
+<mekanism:machineblock2>,
+<mekanism:machineblock2:1>,
+<mekanism:machineblock2:2>,
+<mekanism:machineblock2:4>,
+<mekanism:machineblock2:6>,
+<mekanism:machineblock2:7>,
+<mekanism:machineblock2:8>,
+<mekanism:machineblock2:10>,
+<mekanism:machineblock3:1>,
+<mekanismgenerators:reactor>
+]as IIngredient[];
+//remove
+for item in remove
+{
+    recipes.remove(item);
+}
+//add
+recipes.addShaped(<mekanism:basicblock:8>, 
+                    [[<contenttweaker:reinforced_dirt_plate>,<ore:ingotOsmium>,<contenttweaker:reinforced_dirt_plate>],
+                    [<qmd:ingot:2>,<contenttweaker:ultra_dirt_core>,<qmd:ingot:2>],
+                    [<contenttweaker:reinforced_dirt_plate>,<ore:ingotOsmium>,<contenttweaker:reinforced_dirt_plate>]]);
+recipes.addShaped(<mekanism:energytablet>, 
+                    [[<contenttweaker:reinforced_dirt_plate>,<mekanism:enrichedalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:enrichedalloy>,<mekanism:controlcircuit:1>,<mekanism:enrichedalloy>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:enrichedalloy>,<contenttweaker:reinforced_dirt_plate>]]);
+recipes.addShaped(<mekanism:electrolyticcore>, 
+                    [[<mekanism:reinforcedalloy>,<qmd:dust:2>,<mekanism:reinforcedalloy>],
+                    [<ore:dustIron>,<enderio:item_capacitor_stellar>,<ore:dustGold>],
+                    [<mekanism:reinforcedalloy>,<qmd:dust:2>,<mekanism:reinforcedalloy>]]);
+recipes.addShaped(<mekanism:basicblock2>*4, 
+                    [[<contenttweaker:reinforced_dirt_plate>,<dirtcraft:enrichedironingot>,<contenttweaker:reinforced_dirt_plate>],
+                    [<dirtcraft:enrichedironingot>,<thermalfoundation:material:163>,<dirtcraft:enrichedironingot>],
+                    [<contenttweaker:reinforced_dirt_plate>,<dirtcraft:enrichedironingot>,<contenttweaker:reinforced_dirt_plate>]]);
+recipes.addShaped(<mekanism:polyethene:2>*2, 
+                    [[<mekanism:polyethene>,<industrialforegoing:plastic>,<mekanism:polyethene>],
+                    [<industrialforegoing:plastic>,<mekanism:polyethene>,<industrialforegoing:plastic>],
+                    [<mekanism:polyethene>,<industrialforegoing:plastic>,<mekanism:polyethene>]]);
+recipes.addShaped(<mekanismgenerators:reactor>, 
+                    [[<ore:circuitUltimate>, <advancedrocketry:misc>, <ore:circuitUltimate>], 
+                    [<mekanismgenerators:reactor:1>, <dirtcraft:xiajiefanying>, <mekanismgenerators:reactor:1>], 
+                    [<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]]);
+//合成拓展
+TableCrafting.addShaped(2,<mekanism:machineblock:3>,
+                    [[<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>],
+                    [<contenttweaker:reinforced_dirt_plate>,<qmd:ingot:2>,<enderio:item_alloy_endergy_ball:3>,<qmd:ingot:2>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<enderio:block_enhanced_sag_mill>,<mekanism:basicblock:8>,<enderio:block_enhanced_sag_mill>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<qmd:ingot:2>,<enderio:item_alloy_endergy_ball:3>,<qmd:ingot:2>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock:2>,
+                    [[<mekanism:controlcircuit:2>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:2>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:reinforcedalloy>,<thermalexpansion:machine:3>,<mekanism:reinforcedalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<qmd:ingot:2>,<mekanism:basicblock:8>,<qmd:ingot:2>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:reinforcedalloy>,<thermalexpansion:machine:1>,<mekanism:reinforcedalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit:2>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:2>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock:8>,
+                    [[<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<naturesaura:infused_iron>,<deepmoblearning:glitch_infused_ingot>,<naturesaura:infused_iron>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<extrautils2:ingredients:17>,<mekanism:basicblock:8>,<extrautils2:ingredients:17>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<naturesaura:infused_iron>,<deepmoblearning:glitch_infused_ingot>,<naturesaura:infused_iron>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock:1>,
+                    [[<mekanism:controlcircuit:1>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:1>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:enrichedalloy>,<ore:blockOsmium>,<mekanism:enrichedalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<ore:blockOsmium>,<mekanism:basicblock:8>,<ore:blockOsmium>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:enrichedalloy>,<thermalexpansion:machine:5>,<mekanism:enrichedalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit:1>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:1>]]);
+TableCrafting.addShaped(2,<mekanism:basicblock2:5>,
+                    [[<immersiveengineering:metal_decoration0:7>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<immersiveengineering:metal_decoration0:7>],
+                    [<contenttweaker:reinforced_dirt_plate>,<immersiveengineering:metal_device1:1>,<immersiveengineering:metal_device1:1>,<immersiveengineering:metal_device1:1>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<immersiveengineering:metal_device1:1>,<mekanism:basicblock:8>,<immersiveengineering:metal_device1:1>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<immersiveengineering:metal_device1:1>,<immersiveengineering:metal_device1:1>,<immersiveengineering:metal_device1:1>,<contenttweaker:reinforced_dirt_plate>],
+                    [<immersiveengineering:metal_decoration0:7>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<immersiveengineering:metal_decoration0:7>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock>,
+                    [[<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>],
+                    [<contenttweaker:reinforced_dirt_plate>,<thermalfoundation:fertilizer:1>,<dirtcraft:enrichedironingot>,<thermalfoundation:fertilizer:1>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<dirtcraft:enrichedironingot>,<mekanism:basicblock:8>,<dirtcraft:enrichedironingot>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<thermalfoundation:fertilizer:1>,<dirtcraft:enrichedironingot>,<thermalfoundation:fertilizer:1>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock3:1>,
+                    [[null,<advancedrocketry:solarpanel>,<advancedrocketry:solarpanel>,<advancedrocketry:solarpanel>,null],
+                    [null,null,<immersiveengineering:metal_decoration1>,null,null],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:polyethene:2>,<mekanism:basicblock:8>,<mekanism:polyethene:2>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:reinforcedalloy>,<mekanism:polyethene:2>,<mekanism:reinforcedalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit:2>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:2>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock2:8>,
+                    [[<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<contenttweaker:crystal>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:gastank>,<mekanism:basicblock:8>,<mekanism:gastank>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<abyssalcraft:crystallizer>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock2:7>,
+                    [[<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:enrichedalloy>,<mekanism:machineblock2:11>,<mekanism:enrichedalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:machineblock2:11>,<mekanism:basicblock:8>,<mekanism:machineblock2:11>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:enrichedalloy>,<industrialforegoing:ore_washer>,<mekanism:enrichedalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock2>,
+                    [[<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>],
+                    [<contenttweaker:reinforced_dirt_plate>,<qmd:ingot:2>,<mekanism:energytablet>,<qmd:ingot:2>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:gastank>,<mekanism:basicblock:8>,<mekanism:machineblock2:11>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<qmd:ingot:2>,<abyssalcraft:statetransformer>,<qmd:ingot:2>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock2:6>,
+                    [[<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<mekanism:enrichedalloy>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:gastank>,<mekanism:basicblock:8>,<mekanism:gastank>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<mekanism:enrichedalloy>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock:9>,
+                    [[<mekanism:controlcircuit:1>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:1>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<enderio:item_alloy_endergy_ingot:4>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<qmd:ingot:8>,<mekanism:machineblock>,<qmd:ingot:8>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<enderio:item_alloy_endergy_ingot:4>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit:1>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:1>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock2:4>,
+                    [[<mekanism:controlcircuit:1>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:1>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<mekanism:machineblock2:11>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:gastank>,<mekanism:basicblock:8>,<mekanism:gastank>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<mekanism:electrolyticcore>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit:1>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:1>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock2:2>,
+                    [[<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<extrautils2:ingredients:17>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:gastank>,<mekanism:basicblock:8>,<mekanism:gastank>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<mekanism:basicblock:9>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock2:10>,
+                    [[<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<dirtcraft:enrichedironingot>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:gastank>,<mekanism:machineblock>,<mekanism:gastank>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<mekanism:basicblock:9>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>]]);
+TableCrafting.addShaped(2,<mekanism:machineblock2:1>,
+                    [[<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<contenttweaker:cr2o3_dust>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:machineblock:13>,<mekanism:basicblock:8>,<mekanism:gastank>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<mekanism:basicblock:9>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit>]]);
+TableCrafting.addShaped(2,<mekanism:basicblock:14>,
+                    [[<mekanism:controlcircuit:1>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:1>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:atomicalloy>,<advancedrocketry:misc>,<mekanism:atomicalloy>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:basicblock2>,<mekanism:basicblock:8>,<mekanism:basicblock2>,<contenttweaker:reinforced_dirt_plate>],
+                    [<contenttweaker:reinforced_dirt_plate>,<mekanism:basicblock2>,<mekanism:basicblock2>,<mekanism:basicblock2>,<contenttweaker:reinforced_dirt_plate>],
+                    [<mekanism:controlcircuit:1>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<contenttweaker:reinforced_dirt_plate>,<mekanism:controlcircuit:1>]]);
+//富集仓删配方
+enrichment.removeRecipe(<mekanism:polyethene>);
